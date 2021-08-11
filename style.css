@@ -2,10 +2,21 @@
 body {
   height: 5000px;
 }
+
 :root {
   --primary: #0074e1;
   --pure: #ffffff;
   --ws: whitesmoke;
+}
+
+.light-theme {
+  --bg: whitesmoke;
+  --font: black;
+}
+
+.dark-theme {
+  --font: white;
+  background: black;
 }
 
 * {
@@ -99,7 +110,7 @@ select {
 
 section.hero {
   height: 527px;
-  background-color: var(--ws);
+  background-color: var(--bg);
   display: flex;
   justify-content: space-around;
 }
@@ -108,6 +119,7 @@ section.hero {
   position: relative;
   top: 150px;
   left: 100px;
+  color: var(--font);
 }
 
 .left-hero h1 {
@@ -117,6 +129,7 @@ section.hero {
 .left-hero h5 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .left-hero button {
