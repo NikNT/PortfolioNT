@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
-
+body {
+  height: 5000px;
+}
 :root {
   --primary: #0074e1;
   --pure: #ffffff;
+  --ws: whitesmoke;
 }
 
 * {
@@ -90,4 +93,63 @@ select {
 .text-out {
   transition: all 1s ease-in;
   transform: translateX(0px);
+}
+
+/*Hero Section*/
+
+section.hero {
+  height: 527px;
+  background-color: var(--ws);
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-hero {
+  position: relative;
+  top: 150px;
+  left: 100px;
+}
+
+.left-hero h1 {
+  font-size: 50px;
+}
+
+.left-hero h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.left-hero button {
+  padding: 12px 24px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 0;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  color: var(--pure);
+  cursor: pointer;
+
+  animation-name: main-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes main-animation {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.right-hero img {
+  height: 500px;
+  width: 500px;
+  margin-left: 400px;
+  margin-top: 13.5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
