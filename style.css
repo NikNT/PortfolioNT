@@ -70,6 +70,12 @@ nav ul li a {
   left: -80px;
 }
 
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
 nav .links {
   margin: 20px;
   margin-left: 100px;
