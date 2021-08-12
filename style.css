@@ -29,7 +29,12 @@ body {
 }
 
 html {
-  background-color: black;
+  background-color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Navigation Bar */
@@ -153,6 +158,8 @@ section.hero {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 @keyframes main-animation {
@@ -171,6 +178,55 @@ section.hero {
   margin-left: 400px;
   margin-top: 13.5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+/* About Section */
+.about {
+  margin-top: 10px;
+  color: var(--font);
+}
+
+section.about h1 {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #80d0c7 0%, #0093e9 100%);
+  color: var(--pure);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.left-about img {
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  animation: example 2s both;
+}
+
+.right-about {
+  margin-left: 20px;
+}
+
+.right-about p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* My Animations */
+@keyframes example {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* Animations */

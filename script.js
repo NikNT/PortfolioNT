@@ -34,3 +34,4 @@ function setTheme(theme){
     localStorage.setItem('theme', theme); 
     switcher.value = theme; 
 }
+
