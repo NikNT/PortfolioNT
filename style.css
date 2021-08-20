@@ -186,14 +186,23 @@ section.hero {
 }
 
 /* About Section */
-.about {
+.strip,
+.rev-strip {
   margin-top: 10px;
   color: var(--font);
 }
 
-section.about h1 {
+section.strip h1 {
   background-color: #0093e9;
   background-image: linear-gradient(160deg, #80d0c7 0%, #0093e9 100%);
+  color: var(--pure);
+  text-align: center;
+  border-radius: 4px;
+}
+
+section.rev-strip h1 {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   color: var(--pure);
   text-align: center;
   border-radius: 4px;
@@ -246,6 +255,42 @@ section.about h1 {
   animation-delay: 2.5s;
 }
 
+/*Education*/
+
+.education-timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education-timeline-img {
+  margin-bottom: 5px;
+  width: 600px;
+  border-radius: 4px;
+  animation: slideInRightImage 2s both;
+}
+
+.education-timeline-container img:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.education-timeline-container img:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.education-timeline-container img:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.education-timeline-container img:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.education-timeline-container img:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
 /* My Animations */
 @keyframes slideInLeft {
   from {
@@ -259,6 +304,15 @@ section.about h1 {
 @keyframes slideInRight {
   from {
     transform: translateX(700px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRightImage {
+  from {
+    transform: translateX(1000px);
   }
   to {
     transform: translateX(0);
