@@ -41,6 +41,11 @@ body {
   margin: 0 auto;
 }
 
+#under-construction {
+  margin: 0 auto;
+  margin-left: 400px;
+  margin-top: 10px;
+}
 /* Navigation Bar */
 nav {
   background-color: #0093e9;
